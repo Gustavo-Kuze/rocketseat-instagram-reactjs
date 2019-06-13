@@ -18,7 +18,19 @@ class Feed extends Component {
                         </div>
                         <img src={more} alt="Mais" />
                     </header>
-                    <img src="" alt="Postagem"/>
+                    <img src="https://image.freepik.com/fotos-gratis/3d-render-medico-imagem-macho-figura-cerebro-destacado_1048-5873.jpg" alt="Postagem" />
+                    <footer>
+                        <div className="actions">
+                            <img src={like} alt="" />
+                            <img src={comment} alt="" />
+                            <img src={send} alt="" />
+                        </div>
+
+                        <strong>900 curtidas</strong>
+                        <p>Um post massa!
+                        <span>#teste #top</span>
+                        </p>
+                    </footer>
                 </article>
             </section>
         );
