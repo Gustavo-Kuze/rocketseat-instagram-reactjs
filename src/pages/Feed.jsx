@@ -29,17 +29,17 @@ class Feed extends Component {
                             </div>
                             <img src={more} alt="Mais" />
                         </header>
-                        <img src={`https://localhost:3333/files/${post.image}`} alt="Postagem" />
+                        <img src={`http://localhost:3333/files/${post.image ? encodeURIComponent(post.image.replace('.png', '.jpg')) : ''}`} alt="Postagem" />
                         <footer>
                             <div className="actions">
                                 <img src={like} alt="" />
                                 <img src={comment} alt="" />
                                 <img src={send} alt="" />
                             </div>
-    
+
                             <strong>{post.likes} curtidas</strong>
                             <p>{post.description}
-                            <span>{post.hashtags}</span>
+                                <span>{post.hashtags}</span>
                             </p>
                         </footer>
                     </article>))
